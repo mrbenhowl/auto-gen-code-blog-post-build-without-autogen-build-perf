@@ -7,7 +7,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --hot",
-    "build": "webpack --mode production",  
+    "build": "webpack --mode production",
     "lint": "yarn standard --fix"
   },
   "license": "MIT",
@@ -26,11 +26,10 @@
     "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
-    "babel-plugin-codegen": "^3.0.0",    
     "lodash": "^4.17.11",
     "react": "^16.7.0-alpha.2",
     "react-dom": "^16.7.0-alpha.2",
     "react-redux": "^6.0.0",
-    "redux": "^4.0.1"    
+    "redux": "^4.0.1"
   }
 }
