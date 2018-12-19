@@ -20,8 +20,8 @@ Used to compare the performance of webpack between two identical projects with t
 
 ## Delete dependencies and then perform another fresh install
 1. Running webpack-dev-server for the first time took **2848ms**
-2. Made change (added extra line) to index.js file component \<Test50\/> - reload took **301ms**
-3. Made change (added extra line) to index.js file component \<Test50\/> - reload took **433ms**
+2. Made change (added extra line) to index.js file component \<Test50\/> - reload took **301ms** (possibly some other process running)
+3. Made change (added extra line) to index.js file component \<Test50\/> - reload took **433ms** (possibly some other process running)
 4. Made change (added extra line) to index.js file component \<Test50\/> - reload took **251ms**
 5. Made change (added extra line) to index.js file component \<Test50\/> - reload took **215ms**
 
