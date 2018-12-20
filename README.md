@@ -2,32 +2,25 @@
 
 Used to compare the performance of webpack between two identical projects with the exception that one uses babel-plugin-codegen to generate code and the other does not (this project).
 
-## After a fresh dependency install
-1. Running webpack-dev-server for the first time took **2906ms**
-2. Subsequent webpack-dev-server (no changes) took **2820ms** (quicker maybe because of webpack / babel-loader caching)
-3. Made change (added extra line) to index.js file component \<Test50\/> - reload took **194ms**
-
-## Delete dependencies and then perform another fresh install
-1. Running webpack-dev-server for the first time took **2897ms**
-2. Subsequent webpack-dev-server (no changes) took **2723ms**
-3. Made change (added extra line) to index.js file component \<Test50\/> - reload took **151ms**
-
-## Delete dependencies and then perform another fresh install
-1. Running webpack-dev-server for the first time took **3011ms**
-2. Subsequent webpack-dev-server (no changes) took **2862ms**
-3. Made change (added extra line) to index.js file component \<Test50\/> - reload took **159ms**
+## Fresh dependency install - cold start: webpack-dev-server start up times
+Run 1: 2422ms
+Run 2: 2755ms
+Run 3: 2803ms
+Run 4: 2699ms
+Run 5: 2762ms
 
 
-## Delete dependencies and then perform another fresh install
-1. Running webpack-dev-server for the first time took **2848ms**
-2. Made change (added extra line) to index.js file component \<Test50\/> - reload took **301ms** (possibly some other process running)
-3. Made change (added extra line) to index.js file component \<Test50\/> - reload took **433ms** (possibly some other process running)
-4. Made change (added extra line) to index.js file component \<Test50\/> - reload took **251ms**
-5. Made change (added extra line) to index.js file component \<Test50\/> - reload took **215ms**
+## Previously started and stopped webpack-dev-server: webpack-dev-server start up times
+Run 1: 2629ms   
+Run 2: 2465ms
+Run 3: 2518ms
+Run 4: 2565ms
+Run 5: 2485ms
 
-## Delete dependencies and then perform another fresh install
-1. Running webpack-dev-server for the first time took **2792ms**
-2. Made change (added extra line) to index.js file component \<Test50\/> - reload took **202ms**
-3. Made change (added extra line) to index.js file component \<Test50\/> - reload took **166ms**
-4. Made change (added extra line) to index.js file component \<Test50\/> - reload took **170ms**
-5. Made change (added extra line) to index.js file component \<Test50\/> - reload took **135ms**
+
+## Running webpack-dev-server, component index.js file change: compile time for change
+Run 1: 167ms
+Run 2: 152ms
+Run 3: 225ms
+Run 4: 155ms
+Run 5: 131ms
