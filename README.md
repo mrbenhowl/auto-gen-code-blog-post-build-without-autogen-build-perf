@@ -8,7 +8,7 @@ Used to compare the performance of webpack between two identical projects with t
 - Run 3: 2803ms
 - Run 4: 2699ms
 - Run 5: 2762ms
-
+- **Average**: **2688.2ms**
 
 ## Previously started and stopped webpack-dev-server: webpack-dev-server start up times
 - Run 1: 2629ms   
@@ -16,7 +16,7 @@ Used to compare the performance of webpack between two identical projects with t
 - Run 3: 2518ms
 - Run 4: 2565ms
 - Run 5: 2485ms
-
+- **Average**: **2532.4ms**
 
 ## Running webpack-dev-server, component index.js file change: compile time for change
 - Run 1: 167ms
@@ -24,3 +24,4 @@ Used to compare the performance of webpack between two identical projects with t
 - Run 3: 225ms
 - Run 4: 155ms
 - Run 5: 131ms
+- **Average**: **166ms**
